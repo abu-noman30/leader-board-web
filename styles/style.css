@@ -201,6 +201,7 @@ _______________________________*/
 .course-info .course-rating {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .course-rating .rating-icon .fa-star {
@@ -239,18 +240,21 @@ footer {
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
+
   }
   .blog-container {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
+    flex-wrap: wrap;
   }
   .course-container {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
     row-gap: 2rem;
+    flex-wrap: wrap;
   }
 }
 
@@ -259,14 +263,17 @@ footer {
   .player-container {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
+    flex-wrap: wrap;
   }
   .blog-container {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
+    flex-wrap: wrap;
   }
   .course-container {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
+    flex-wrap: wrap;
   }
 }
 
@@ -274,6 +281,7 @@ footer {
 @media only screen and (min-width: 1024px) {
   .player-container {
     grid-template-columns: repeat(3, 1fr);
+    
   }
   .blog-container {
     grid-template-columns: repeat(2, 1fr);
